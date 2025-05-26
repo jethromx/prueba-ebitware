@@ -4,7 +4,7 @@ Este repositorio contiene dos proyectos de ejemplo:
 
 ## 1. API REST con Spring Boot 
 
-[Ver documentación del CRUD](./crud-springboot/README.md)
+[Ver documentación del CRUD](./crud-springboot/Readme.md)
 
 API REST desarrollada con Spring Boot para la gestión de usuarios.
 
@@ -16,7 +16,7 @@ API REST desarrollada con Spring Boot para la gestión de usuarios.
 
 ## 2. Procesador de CSV con Node.js 
 
-[Ver documentación del procesador CSV](./cvs-node/README.md)
+[Ver documentación del procesador CSV](./cvs-node/Readme.md)
 
 API REST para procesar archivos CSV y almacenarlos en MongoDB.
 
