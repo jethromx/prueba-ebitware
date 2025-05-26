@@ -1,0 +1,14 @@
+
+
+@baseUrl=http://localhost
+@port=3000
+
+POST {{baseUrl}}:{{port}}/api/import-csv
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="file"; filename="username.csv"
+Content-Type: text/csv
+
+< ./username.csv
+------WebKitFormBoundary7MA4YWxkTrZu0gW--

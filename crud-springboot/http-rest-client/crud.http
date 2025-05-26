@@ -1,0 +1,39 @@
+
+
+@baseUrl=http://localhost
+@port=8085
+### Crear usuario
+POST {{baseUrl}}:{{port}}/api/v0/usuarios
+Content-Type: application/json
+
+{
+  "name": "Juan Pérez",
+  "email": "juan.perez3@email.com",
+  "password": "password123",
+  "role": "USER",
+  "status": "ACTIVE"
+}
+
+### Listar usuarios
+# @name getUser
+GET {{baseUrl}}:{{port}}/api/v0/usuarios
+Content-Type: application/json
+
+@userId={{getUser.response.body.$[0].id}}
+
+### Obtener usuario por ID
+GET {{baseUrl}}:{{port}}/api/v0/usuarios/{{userId}}
+Content-Type: application/json
+
+### Actualizar usuario (PATCH)
+PATCH {{baseUrl}}:{{port}}/api/v0/usuarios/{{userId}}
+Content-Type: application/json
+
+{
+  "name": "Juan Actualizado",
+  "email": "juan.actualizado@email.com"
+}
+
+### Eliminar usuario
+DELETE {{baseUrl}}:{{port}}/api/v0/usuarios/{{userId}}
+Content-Type: application/json
